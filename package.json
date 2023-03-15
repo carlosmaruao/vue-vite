@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@amcharts/amcharts5": "^5.3.7",
+    "@amcharts/amcharts5-geodata": "^5.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

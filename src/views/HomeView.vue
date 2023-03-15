@@ -1,9 +1,15 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+  <div class="w-full h-full">
+    <MapAmchart />
+  </div>
+</template>
+<script>
+import MapAmchart from '../components/Map.vue'
+
+export default {
+  components: {
+    MapAmchart
+  }
+}
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>

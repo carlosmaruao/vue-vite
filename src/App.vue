@@ -1,21 +1,24 @@
 <template>
-  <header>
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+  <div class="w-screen h-screen m-0 p-0">
+    <div class="w-screen h-[8vh] flex bg-gray-300 justify-start items-center">
+      <nav class="px-4">
+        <RouterLink to="/" class="text-black p-2 font-semibold hover:p-2 ">Home</RouterLink>
+        <RouterLink to="/about" class="text-black p-2 font-semibold hover:p-2 ">About</RouterLink>
       </nav>
     </div>
-  </header>
 
-  <RouterView />
+    <div class="w-screen h-[92vh] bg-gray-100">
+      <RouterView />
+    </div>
+  </div>
 </template>
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<style scoped> 
+<style scoped>
+/* nav a{
+    color: #444;
+    padding: 3px;
+  } */
 </style>
